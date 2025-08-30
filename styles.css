@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;  /* Light background */
+  color: #333;  /* Dark text color for better readability */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('https://www.transparenttextures.com/patterns/diagonal-stripes.png');
+  background-repeat: repeat;
+}
+
+.container {
+  text-align: center;
+  width: 90%;
+  max-width: 600px;  /* Compact width */
+  background-color: rgba(255, 255, 255, 0.9);  /* Light background */
+  padding: 15px;  /* Reduced padding */
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.headline {
+  font-size: 1.5rem;  /* Slightly smaller headline */
+  color: #3f51b5;  /* Indigo color */
+  margin-bottom: 15px;  /* Reduced bottom margin */
+  text-transform: capitalize;
+}
+
+.crypto-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;  /* Reduced gap between cryptocurrencies */
+  justify-content: flex-start;
+}
+
+.crypto-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;  /* Smaller font size for cryptocurrency items */
+  color: #333;
+  padding: 4px;  /* Reduced padding */
+}
+
+.crypto-item .name {
+  color: #009688;  /* Teal color for names */
+}
+
+.crypto-item .price {
+  font-weight: bold;
+  color: #8bc34a;  /* Light Green color for prices */
+}
+
+.crypto-list hr {
+  border: 1px solid #ddd;  /* Light gray line between cryptocurrencies */
+  margin: 5px 0;  /* Reduced margin for the horizontal line */
+}
+
+@media (max-width: 768px) {
+  .headline {
+    font-size: 1.4rem;  /* Adjusted size for small screens */
+  }
+}
